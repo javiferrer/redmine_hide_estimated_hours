@@ -1,6 +1,6 @@
-### Hide Estimated Hours (Redmine Plugin)
+### Hide Estimated Hours Permission (Redmine Plugin)
 
-This Redmine plugin reuses the standard "view_time_entries" permission to hide the estimated hours for specific roles from
+This Redmine plugin add a new permission to hide the estimated hours for specific roles from
 
 * **Issues view**
 * **Issues edit**
@@ -11,6 +11,7 @@ This Redmine plugin reuses the standard "view_time_entries" permission to hide t
 * **REST API Issues Detail**
 * **Issues journal**
 * **Issues mail notifications**
+* **Issues global view**
 
 This plugin is just a limited workaround, i really would love to see this feature implemented in Redmine. If you think so
 too, please +1 [this](http://www.redmine.org/issues/12005) and [this](http://www.redmine.org/issues/11963)
@@ -24,7 +25,7 @@ The installation follows the default path for [Redmine plugins](http://www.redmi
 
 ## Usage
 
-Uncheck the "View spent time" permission for any role that should not be able to see estimated hours.
+Check the "Hide Estimated Time" permission for any role that should not be able to see estimated hours.
 
 
 ## Requirements
@@ -35,4 +36,9 @@ Redmine >= 2.5.0
 ## License
 
 
-[http://return1.mit-license.org/](http://return1.mit-license.org/)
+[http://opensource.org/licenses/MIT](MIT)
+
+## acknowledgement
+
+Thanks to return1 for share the code of this plugin https://github.com/return1/redmine_hide_estimated_hours
+

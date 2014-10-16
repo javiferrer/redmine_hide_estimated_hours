@@ -63,7 +63,7 @@
 <% end %>
 
 <% if @issue.safe_attribute? 'estimated_hours' %>
-<% if User.current.allowed_to?(:view_time_entries, @project) %>
+<% unless User.current.deny_view_estimated_time?(@project) %>
 <p><%= f.text_field :estimated_hours, :size => 3, :disabled => !@issue.leaf?, :required => @issue.required_attribute?('estimated_hours') %> <%= l(:field_hours) %></p>
 <% end %>
 <% end %>
