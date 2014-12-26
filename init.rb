@@ -5,6 +5,7 @@ require 'query_patch'
 require 'queries_helper_patch'
 require 'journal_patch'
 require 'pdf_patch'
+require 'issues_helper_patch'
 
 Redmine::Plugin.register :redmine_hide_estimated_hours_permission do
   name 'Hide estimated hours permission'

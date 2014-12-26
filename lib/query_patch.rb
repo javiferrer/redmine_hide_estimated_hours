@@ -14,10 +14,11 @@ module QueryPatch
     #see <redmine_src>/app/models/query.rb for overwritten methods
 
     def available_filters_with_patch
-      return @available_filters if @available_filters
-      @available_filters = available_filters_without_patch
-      @available_filters.delete("estimated_hours") if User.current.deny_view_estimated_time?(project)
-      return @available_filters
+      unless @available_filters
+        @available_filters = available_filters_without_patch
+        @available_filters.delete("estimated_hours") if User.current.deny_view_estimated_time?(project)
+      end
+      @available_filters
     end
 
   end
