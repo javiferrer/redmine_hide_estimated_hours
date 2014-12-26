@@ -9,6 +9,8 @@ This Redmine plugin add a new permission to hide the estimated hours for specifi
 * **Issues PDF**
 * **REST API Issues Index**
 * **REST API Issues Detail**
+* **ATOM export**
+* **CSV export**
 * **Issues journal**
 * **Issues mail notifications**
 * **Issues global view**
@@ -30,7 +32,7 @@ Check the "Hide Estimated Time" permission for any role that should not be able 
 
 ## Requirements
 
-Redmine >= 2.5.0
+Redmine >= 2.6.x
 
 
 ## License
